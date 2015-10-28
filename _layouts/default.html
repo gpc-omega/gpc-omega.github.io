@@ -1,0 +1,30 @@
+{% include doctype.html %}
+<html>
+  <head>
+    {% include head_preamble.html %} 
+  </head>
+  <body>
+    <div id="gpco-main" class="pure-g">
+      <div id="gpco-sidebar" class="pure-u-1 pure-u-md-1-4">
+        <div id="gpco-sidebar-content">
+          <h1>GPC Omega</h1>
+          <div class="pure-menu">
+            <nav class="pure-menu-list">
+              <p class="pure-menu-heading">Information</p>
+              <a class="pure-menu-item pure-menu-link" href="./post_history.html">Previous Posts</a>
+              <a class="pure-menu-item pure-menu-link" href="./calendar.html">Calendar</a>
+              <a class="pure-menu-item pure-menu-link" href="./resources.html">Resources</a>
+              <p class="pure-menu-heading">Projects</p>
+              <a class="pure-menu-item pure-menu-link">Game</a>
+              <a class="pure-menu-item pure-menu-link" href="./index.html">Website</a>
+              <a class="pure-menu-item pure-menu-link">Book Group</a>
+              <a class="pure-menu-item pure-menu-link">Mobile App</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <main id="gpco-content" class="pure-u-1 pure-u-md-3-4">{{ content }}</main>
+    </div>
+  </body>
+</html>
